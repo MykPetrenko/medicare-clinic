@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MediCare Clinic</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<header>
+    <h1>MediCare Clinic</h1>
+    <p>Онлайн запис до лікарів</p>
+</header>
+
+<nav>
+    <a href="#home">Головна</a>
+    <a href="#doctors">Лікарі</a>
+    <a href="#appointment">Запис</a>
+</nav>
+
+<section id="home">
+    <h2>Ласкаво просимо до MediCare Clinic</h2>
+    <p>
+        Наша клініка надає якісні медичні послуги та можливість
+        онлайн-запису до спеціалістів.
+    </p>
+</section>
+
+<section id="doctors">
+    <h2>Наші лікарі</h2>
+
+    <div class="doctor-card">
+        <h3>Іван Петренко</h3>
+        <p>Терапевт</p>
+        <p>Пн–Пт: 09:00–17:00</p>
+    </div>
+
+    <div class="doctor-card">
+        <h3>Олена Коваль</h3>
+        <p>Кардіолог</p>
+        <p>Пн–Сб: 10:00–18:00</p>
+    </div>
+
+    <div class="doctor-card">
+        <h3>Андрій Мельник</h3>
+        <p>Стоматолог</p>
+        <p>Вт–Нд: 11:00–19:00</p>
+    </div>
+
+</section>
+
+
+<section id="schedule">
+    <h2>Розклад прийому</h2>
+
+    <table border="1" cellpadding="10">
+        <tr>
+            <th>Лікар</th>
+            <th>Дні прийому</th>
+            <th>Години</th>
+        </tr>
+
+        <tr>
+            <td>Іван Петренко</td>
+            <td>Пн–Пт</td>
+            <td>09:00–17:00</td>
+        </tr>
+
+        <tr>
+            <td>Олена Коваль</td>
+            <td>Пн–Сб</td>
+            <td>10:00–18:00</td>
+        </tr>
+
+        <tr>
+            <td>Андрій Мельник</td>
+            <td>Вт–Нд</td>
+            <td>11:00–19:00</td>
+        </tr>
+
+    </table>
+</section>
+
+<section id="appointment">
+    <h2>Онлайн запис</h2>
+
+    <form id="appointmentForm">
+
+        <label>Ім'я:</label><br>
+        <input type="text" required><br><br>
+
+        <label>Телефон:</label><br>
+        <input type="tel" required><br><br>
+
+        <label>Лікар:</label><br>
+        <select required>
+            <option>Терапевт</option>
+            <option>Кардіолог</option>
+            <option>Стоматолог</option>
+        </select><br><br>
+
+        <label>Дата:</label><br>
+        <input type="date" required><br><br>
+
+        <button type="submit">Записатися</button>
+
+    </form>
+</section>
+
+<script src="js/script.js"></script>
+
+</body>
+</html>
